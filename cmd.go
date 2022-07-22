@@ -6,7 +6,7 @@ import (
 )
 
 func _11() {
-	cmd := exec.Command("ls", "-l", "/var/log/")
+	cmd := exec.Command("ls", "-alFh", "/etc")
 	out, _ := cmd.CombinedOutput()
 	fmt.Printf("combined out:\n%s\n", string(out))
 }
